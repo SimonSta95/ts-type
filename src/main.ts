@@ -2,7 +2,7 @@ import './style.css'
 
 type Grade = 1 | 2 | 3 | 4 | 5 | 6 | "A" | "B" | "C" | "D" | "E" | "F" | undefined;
 
-interface Student {
+type Student = {
     firstName: string;
     lastName: string;
     age: number;
@@ -14,7 +14,7 @@ const students: Student[] = [
         firstName: "Simon",
         lastName: "Staß",
         age: 29,
-        grades: [undefined,3,"A",2,"C",2]
+        grades: [undefined, 3, "A", 2, "C", 2, "F", 1]
     },
     {
         firstName: "Anton",
